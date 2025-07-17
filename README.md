@@ -8,7 +8,7 @@ This project demonstrates **real-time face detection in the browser** using [Ope
 
 > Automatically detects faces from webcam and allows you to download them with a single click.
 
-![Demo Screenshot](screenshot.png) <!-- Optional: Replace with your own -->
+![Demo Screenshot](Demo.png) <!-- Optional: Replace with your own -->
 
 ---
 
