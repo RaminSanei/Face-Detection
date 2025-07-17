@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>تشخیص چهره با دانلود با کلیک</title>
+  <script async src="opencv.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    body { text-align: center; font-family: sans-serif; }
+    canvas, video { margin: 10px auto; display: block; }
+    .faces { margin-top: 20px; }
+    .faces img {
+      margin: 5px;
+      cursor: pointer;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      transition: transform 0.2s;
+    }
+    .faces img:hover {
+      transform: scale(1.05);
+      border-color: #ff5c5c;
+    }
+  </style>
+</head>
+<body>
+  <h2>Face Detection and Download on Left Click</h2>
+  <video id="video" width="640" height="480" autoplay muted></video>
+  <canvas id="canvas" width="640" height="480" style="display: none;"></canvas>
+  <div class="faces" id="faces"></div>
+
+  
+  <script>
+    let Module = {
+  onRuntimeInitialized() {
+    console.log("✅ OpenCV آماده است!");
+    startFaceDetection();
+  }
+};
+  </script>
+</body>
+</html>
